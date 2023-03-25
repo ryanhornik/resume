@@ -6,8 +6,7 @@
 % available at http://www.latex-project.org/lppl/.
 
 
-\documentclass[11pt,a4paper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
-
+\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
 % moderncv themes
 \moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
 \moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
@@ -22,15 +21,15 @@
 %\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
 
 % personal data
-\name{J Ryan}{Hornik}
-\address{5330 Beverly Hill St. Apt 34}{Houston, TX 77056}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\name{Ryan}{Hornik}
+\address{10302 Button Quail CV}{Austin, TX 78758}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{(713)~966~0850}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\email{ryan@ryanhornik.com}                               % optional, remove / comment the line if not wanted
+\email{ryanhornik@gmail.com}                               % optional, remove / comment the line if not wanted
 %\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
 \social[linkedin][www.linkedin.com/in/ryanhornik]{ryanhornik}                     % optional, remove / comment the line if not wanted
-\social[github][github.com/ryanhornik]{ryanhornik\nobreak\hspace{7.449em plus 7.449em}}                              % optional, remove / comment the line if not wanted
+\social[github][github.com/ryanhornik]{ryanhornik\nobreak\hspace{8.33em plus 8.33em}}                              % optional, remove / comment the line if not wanted
 
-\renewcommand*{\mobilephonesymbol}{\nobreak\hspace{3.262em plus 3.262em}{\Large\faMobilePhone}~}
+\renewcommand*{\mobilephonesymbol}{\nobreak\hspace{2.87em plus 2.87em}{\Large\faMobilePhone}~}
 \renewcommand*{\linkedinsocialsymbol}{~~~~~~~~~~~~~~~~~~~~~~~~{\small\faLinkedin}~} 
 
 \begin{document}
@@ -39,53 +38,47 @@
 \vspace*{-1.6cm}
 
 \section{Experience}
-\cventry{Jun 2016--Present}{Software Engineer}{Austin Sigma, Inc}{Houston, TX}{}{Responsibilities include, designing and programming various features for an iOS application, and web applications. Worked primarily with Objective-C, Python, and JavaScript\newline{}%
+\cventry{Apr 2017 -- Mar 2023}{Senior Software Engineer}{Indeed, Inc}{Austin, TX}{}{Responsibilities include, software design, full stack development, technical leadership, and mentorship{}%
+\begin{itemize}%
+\item Tech lead for Indeed Text2Apply, a new product from Indeed's incubator
+  \begin{itemize}
+  \item Mentored other engineers inside and outside the team
+  \item Work with cross-functional team to plan and priortize the team's work
+  \item Designed and built the core product, integrating with Twilio to allow jobseekers to answer custom screening questions via text message
+  \item Designed on-demand signage generation feature, utilizing Amazon SQS and Celery, to submit physical signage orders to a third-party vendor's API
+  \item Guided team to deliver engineering goals, including improving test coverage to 80\%, and paying down other technical debt
+  \end{itemize}
+\item Wrote the initial implementation of the scripts used to publish python libraries internally to Indeed's Nexus Repository
+\item Worked on migrating the local development of python/django projects at Indeed from vagrant to docker-compose
+  \begin{itemize}
+  	\item Performed initial exploration and testing of using docker-compose with Text2Apply's tech stack
+  	\item Wrote scripts for handling automatic setup of apache reverse proxy for docker containers
+  	\item Explored and documented use of Celery and SQS docker-compose for incubator projects
+  \end{itemize}
+\end{itemize}}
+\cventry{Jun 2016 -- Mar 2017}{Software Engineer}{Austin Sigma, Inc}{Houston, TX}{}{Responsibilities include, designing and programming various features for an iOS application, and web applications. Worked primarily with Objective-C, Python, and JavaScript{}%
 \begin{itemize}%
 \item Implemented various features for an encrypted e-mail application on iOS
-  \begin{itemize}%
-  \item Built WKWebView based email viewer/composer
-    \begin{itemize}%
-    \item Sent messages between JavaScript and Objective-C
-    \item Inline, and regular attachments
-    \item Text styling options
-    \end{itemize}
-  \end{itemize}
 \item Migrated back-end servers from in house servers to AWS.
-  \begin{itemize}%
-  \item Managed the servers deployment with Elastic Beanstalk
-  \item Setup SSL for the servers
-  \end{itemize}
-\item Built websites with dynamic content for various applications using Python Django
 \end{itemize}}
-\cventry{Feb 2015--July 2016}{Co-founder/Software Engineer}{Towbee, LLC}{Houston, TX}{}{Responsibilities range from development of the core software product to making strategic decisions based on primary market research and customer interviews.\newline
+\cventry{Feb 2015 -- July 2016}{Co-founder/Software Engineer}{Towbee, LLC}{Houston, TX}{}{Responsibilities range from development of the core software product to making strategic decisions based on primary market research and customer interviews.
 \begin{itemize}%
-\item Designed and built large portions of the web server back-end in Python Django
-  \begin{itemize}%
-  \item Asynchronous algorithm for selection of service providers' to show to the user
-  \item Core workflow for users to request assistance
-  \item Integration with Google Maps, Google Distance Matrix, Braintree payments, and Twilio
-  \end{itemize}
-\item Front end design and CSS
+\item Designed and built large portions of the web server front-end \& back-end in Python Django
 \item Moved the product from an untested state to Test Driven Development with over 80\% coverage.
 \end{itemize}}
 
 \vspace*{-0.3cm}
-\section{Projects}
-\subsection{freefallr Android App - Fall 2015 Code Red Hackathon}
-Native Android app using accelerometers to track when device is in freefall state. Includes leaderboards featuring users with the longest free-fall times. Back-end in Python Django.
-
-\vspace*{-0.3cm}
 \section{Computer skills}
 \subsection{Languages}
-\cvdoubleitem{Proficient in}{Python, Objective-C, Swift, JavaScript, HTML, CSS, Java}{Familiar with}{C/C++, Haskell, C\#, MIPS Assembly}
+\cvdoubleitem{Proficient in}{Python, JavaScript/TypeScript, Java}{Familiar with}{C/C++, Objective-C, Swift, C\#}
 \subsection{Frameworks/Software/Tools}
-\cvdoubleitem{Database}{MySQL, PostgreSQL, sqlite}{Version Control}{Git, Github, SVN}
-\cvdoubleitem{Platforms}{Linux, Mac OS, Windows, Android, iOS}{Web Frameworks/Tools}{Django, jQuery, BootStrap, AWS}
-\cvdoubleitem{Native Frameworks}{iOS, Android, WinForms}{Other}{RegEx, Agile Development}
+\cvdoubleitem{Tools}{Docker / Docker-Compose, GraphQL, AWS, Git}{Database}{MySQL, PostgreSQL, Amazon Aurora}
+\cvdoubleitem{Frameworks}{Django, React}{Platforms}{Linux, Mac OS, Windows, Android, iOS}
+
 
 \vspace*{-0.3cm}
 \section{Education}
-\cventry{2012--2016}{BS Computer Science Cum Laude}{University of Houston}{Houston, TX}{\textit{Major 3.69, Overall 3.59}}{Academic Excellence Scholarship, Dean's List 6 Semesters}
+\cventry{2012--2016}{BS Computer Science, Cum Laude}{University of Houston}{Houston, TX}{}{}
 
 \clearpage
 \end{document}
