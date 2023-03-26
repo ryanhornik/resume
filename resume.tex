@@ -22,7 +22,7 @@
 
 % personal data
 \name{Ryan}{Hornik}
-\address{10302 Button Quail CV}{Austin, TX 78758}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
+\address{Austin, TX}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
 \phone[mobile]{(713)~966~0850}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
 \email{ryanhornik@gmail.com}                               % optional, remove / comment the line if not wanted
 %\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
@@ -38,33 +38,35 @@
 \vspace*{-1.6cm}
 
 \section{Experience}
-\cventry{Apr 2017 -- Mar 2023}{Senior Software Engineer}{Indeed, Inc}{Austin, TX}{}{Responsibilities include, software design, full stack development, technical leadership, and mentorship{}%
+\cventry{Apr 2017 -- Mar 2023}{Senior Software Engineer}{Indeed, Inc}{Austin, TX}{}{Responsibilities include software design, full stack development, technical leadership, and mentorship{}%
 \begin{itemize}%
-\item Tech lead for Indeed Text2Apply, a new product from Indeed's incubator
+\item Tech lead for Indeed Text2Apply, a new product from Indeed's Incubator
   \begin{itemize}
-  \item Mentored other engineers inside and outside the team
+  \item Mentored engineers inside and outside the team
   \item Work with cross-functional team to plan and priortize the team's work
   \item Designed and built the core product, integrating with Twilio to allow jobseekers to answer custom screening questions via text message
   \item Designed on-demand signage generation feature, utilizing Amazon SQS and Celery, to submit physical signage orders to a third-party vendor's API
-  \item Guided team to deliver engineering goals, including improving test coverage to 80\%, and paying down other technical debt
+  \item Guided team to deliver engineering goals, including improving test coverage from \char`\~40\% to 80\%
   \end{itemize}
-\item Wrote the initial implementation of the scripts used to publish python libraries internally to Indeed's Nexus Repository
-\item Worked on migrating the local development of python/django projects at Indeed from vagrant to docker-compose
+\item Wrote the scripts used to publish 100s of Python libraries internally to Indeed's Nexus Repository
   \begin{itemize}
-  	\item Performed initial exploration and testing of using docker-compose with Text2Apply's tech stack
-  	\item Wrote scripts for handling automatic setup of apache reverse proxy for docker containers
-  	\item Explored and documented use of Celery and SQS docker-compose for incubator projects
+  	\item Documented the script to enable users and future contributors
+  \end{itemize}
+\item Developed key parts of the process for migrating development of Python / Django projects from Vagrant to Docker
+  \begin{itemize}
+  	\item Investigated the migration, testing with Text2Apply and documented the steps
+	\item Wrote scripts for handling automatic setup of Docker for Python / Django projects
   \end{itemize}
 \end{itemize}}
-\cventry{Jun 2016 -- Mar 2017}{Software Engineer}{Austin Sigma, Inc}{Houston, TX}{}{Responsibilities include, designing and programming various features for an iOS application, and web applications. Worked primarily with Objective-C, Python, and JavaScript{}%
+\cventry{Jun 2016 -- Mar 2017}{Software Engineer}{Austin Sigma, Inc}{Houston, TX}{}{Responsibilities include designing and programming various features for an iOS and web applications. Worked primarily with Objective-C, Python, and JavaScript{}%
 \begin{itemize}%
-\item Implemented various features for an encrypted e-mail application on iOS
-\item Migrated back-end servers from in house servers to AWS.
+\item Implemented various features for an encrypted e-mail application on iOS, such as a native in-app email viewer and composer supporting inline \& regular attachments, and text styling options
+\item Migrated back-end servers from in-house to AWS
 \end{itemize}}
-\cventry{Feb 2015 -- July 2016}{Co-founder/Software Engineer}{Towbee, LLC}{Houston, TX}{}{Responsibilities range from development of the core software product to making strategic decisions based on primary market research and customer interviews.
+\cventry{Feb 2015 -- July 2016}{Co-founder/Software Engineer}{Towbee, LLC}{Houston, TX}{}{Responsibilities range from development of the core software product to making strategic decisions based on primary market research and customer interviews
 \begin{itemize}%
 \item Designed and built large portions of the web server front-end \& back-end in Python Django
-\item Moved the product from an untested state to Test Driven Development with over 80\% coverage.
+\item Moved the product from an untested state to Test Driven Development with over 80\% coverage
 \end{itemize}}
 
 \vspace*{-0.3cm}
@@ -72,7 +74,7 @@
 \subsection{Languages}
 \cvdoubleitem{Proficient in}{Python, JavaScript/TypeScript, Java}{Familiar with}{C/C++, Objective-C, Swift, C\#}
 \subsection{Frameworks/Software/Tools}
-\cvdoubleitem{Tools}{Docker / Docker-Compose, GraphQL, AWS, Git}{Database}{MySQL, PostgreSQL, Amazon Aurora}
+\cvdoubleitem{Tools}{Docker / Docker-Compose, GraphQL, AWS, Git, Jenkins, GitLab CI}{Database}{MySQL, PostgreSQL, Amazon Aurora}
 \cvdoubleitem{Frameworks}{Django, React}{Platforms}{Linux, Mac OS, Windows, Android, iOS}
 
 
