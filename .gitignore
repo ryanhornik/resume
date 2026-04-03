@@ -1,2 +1,6 @@
-# Download from https://github.com/xdanaux/moderncv.git
+*.aux
+*.log
+*.out
+*.pdf
+*.synctex.gz
 

@@ -1,49 +1,34 @@
-%% start of file `template.tex'.
-%% Copyright 2006-2015 Xavier Danaux (xdanaux@gmail.com).`
-%
-% This work may be distributed and/or modified under the
-% conditions of the LaTeX Project Public License version 1.3c,
-% available at http://www.latex-project.org/lppl/.
-
-
-\documentclass[11pt,letterpaper,sans]{moderncv}        % possible options include font size ('10pt', '11pt' and '12pt'), paper size ('a4paper', 'letterpaper', 'a5paper', 'legalpaper', 'executivepaper' and 'landscape') and font family ('sans' and 'roman')
+\documentclass[11pt,letterpaper,sans]{moderncv}
 % moderncv themes
-\moderncvstyle{banking}                             % style options are 'casual' (default), 'classic', 'banking', 'oldstyle' and 'fancy'
-\moderncvcolor{blue}                               % color options 'black', 'blue' (default), 'burgundy', 'green', 'grey', 'orange', 'purple' and 'red'
-%\renewcommand{\familydefault}{\sfdefault}         % to set the default font; use '\sfdefault' for the default sans serif font, '\rmdefault' for the default roman one, or any tex font name
-%\nopagenumbers{}                                  % uncomment to suppress automatic page numbering for CVs longer than one page
-
-% character encoding
-%\usepackage[utf8]{inputenc}                       % if you are not using xelatex ou lualatex, replace by the encoding you are using
+\moderncvcolor{blue}
+\moderncvstyle{banking}
+%\renewcommand{\familydefault}{\sfdefault} 
+%\nopagenumbers{}
 % adjust the page margins
-\usepackage[scale=0.86]{geometry}
-%\setlength{\hintscolumnwidth}{3cm}                % if you want to change the width of the column with the dates
-%\setlength{\makecvtitlenamewidth}{10cm}           % for the 'classic' style, if you want to force the width allocated to your name and avoid line breaks. be careful though, the length is normally calculated to avoid any overlap with your personal info; use this at your own typographical risks...
+\usepackage[scale=0.85]{geometry}
+
 
 % personal data
 \name{Ryan}{Hornik}
-\address{Seattle, WA}% optional, remove / comment the line if not wanted; the "postcode city" and "country" arguments can be omitted or provided empty
-\phone[mobile]{(713)~966~0850}                   % optional, remove / comment the line if not wanted; the optional "type" of the phone can be "mobile" (default), "fixed" or "fax"
-\email{ryanhornik@gmail.com}                               % optional, remove / comment the line if not wanted
-%\homepage{www.johndoe.com}                         % optional, remove / comment the line if not wanted
-\social[linkedin][www.linkedin.com/in/ryanhornik]{ryanhornik}                     % optional, remove / comment the line if not wanted
-\social[github][github.com/ryanhornik]{ryanhornik\nobreak\hspace{8.33em plus 8.33em}}                              % optional, remove / comment the line if not wanted
-
-\renewcommand*{\mobilephonesymbol}{\nobreak\hspace{2.87em plus 2.87em}{\Large\faMobilePhone}~}
-\renewcommand*{\linkedinsocialsymbol}{~~~~~~~~~~~~~~~~~~~~~~~~{\small\faLinkedin}~} 
+\address{Seattle, WA}
+\phone[mobile]{(713)~966~0850}
+\email{ryanhornik@gmail.com}
+%\homepage{www.johndoe.com}
+\social[linkedin][www.linkedin.com/in/ryanhornik]{ryanhornik}
+\social[github][github.com/ryanhornik]{ryanhornik}
 
 \begin{document}
 %-----       resume       ---------------------------------------------------------
 \makecvtitle
-\vspace*{-1.6cm}
+\vspace*{-1cm}
 
 \section{Experience}
-\cventry{Jun 2023 -- Present}{Sr. Software Engineer}{Atlassian, Inc}{Seattle, WA}{}{Design and develop resiliant software systems for Compass, technical leadership, mentorship{}%
+\cventry{Jun 2023 -- Mar 2026}{Sr. Software Engineer}{Atlassian, Inc}{Seattle, WA}{}{Design and develop resiliant software systems for Compass, technical leadership, mentorship{}
 \begin{itemize}
 \item Realtime and bootstrap data replication pipeline
 	\begin{itemize}
 	\item Work with globally distributed teams to reach alignment
-	\item Designed and built a resiliant and performant system for processing a stream of 10 million+ events per day through optimizations, coroutines, and careful AWS resource allocation
+	\item Designed and built a resiliant and performant system for processing a stream of 40 million+ events per day through optimizations, coroutines, and careful AWS resource allocation
 	\item Integrated the bootstrapping process into Compass onboarding, enabling newly provisioned Compass tenants to be preloaded with all their existing Atlassian data
 	\end{itemize}
 \item Lead project to bring aqcuired product into compliance with AI regulations. Bridge internal Atlassian services to newly acquired product via AWS VPC and PrivateLinks
@@ -65,24 +50,16 @@
 \end{itemize}}
 
 \cventry{Jun 2016 -- Mar 2017}{Software Engineer}{Austin Sigma, Inc}{Houston, TX}{}{Designed and programmed features for iOS and web applications using Objective-C, Python, and JavaScript{}}
-\cventry{Feb 2015 -- July 2016}{Co-founder/Software Engineer}{Towbee, LLC}{Houston, TX}{}{Developed the core software product and made strategic decisions based on primary market research and customer interviews}
+\cventry{Feb 2015 -- Jul 2016}{Co-founder/Software Engineer}{Towbee, LLC}{Houston, TX}{}{Developed the core software product and made strategic decisions based on primary market research and customer interviews}
 
-\vspace*{-0.35cm}
 \section{Computer skills}
-\vspace*{-1em}
 \subsection{Languages}
 \cvdoubleitem{Proficient}{Kotlin, Java, Python, JavaScript / TypeScript}{Familiar}{Ruby, C/C++, Objective-C, Swift, C\#}
-\vspace*{-0.5em}
 \subsection{Frameworks/Software/Tools}
 \cvdoubleitem{Tools}{Docker / Docker-Compose, GraphQL, AWS, Git, Jenkins, Bitbucket Pipelines, Redis, SQS, Kinesis}{Database}{PostgreSQL, MySQL, Amazon Aurora}
-\cvdoubleitem{Frameworks}{Spring, React, Django}{Platforms}{Linux, Mac OS, Windows, Android, iOS}
+\cvdoubleitem{Frameworks}{Spring, React, Django, FastAPI}{Platforms}{Linux, Mac OS, Windows, Android, iOS}
 
-
-\vspace*{-0.35cm}
 \section{Education}
-\cventry{}{}{University of Houston \normalfont -- Bachelor of Science Computer Science, Cum Laude (2016)}{Houston, TX}{}{}
-\clearpage
+\cventry{2012--2016}{Bachelor of Science Computer Science Cum Laude}{University of Houston}{Houston, TX}{}{}\clearpage
 \end{document}
 
-
-%% end of file `template.tex'.
